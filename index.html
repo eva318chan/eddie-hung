@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>孔令江 Eddie Hung — 全媒人</title>
+<meta name="description" content="孔令江 Eddie Hung — 香港資深傳媒人。微訊媒體策略執行監製、《V1周報》創辦人、前亞洲電視製作總監。">
+<style>
+:root{
+  --bg:#0d0f14; --bg2:#14171f; --gold:#d4a94e; --gold-dim:#9a7830;
+  --text:#eef0f4; --muted:#9aa0ae; --line:rgba(212,169,78,.22);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  line-height:1.85;letter-spacing:.03em}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:50;background:rgba(13,15,20,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:26px;height:60px}
+nav .brand{font-weight:700;font-size:18px;color:var(--text);letter-spacing:.12em;white-space:nowrap}
+nav .brand span{color:var(--gold)}
+nav .links{margin-left:auto;display:flex;gap:18px;font-size:14px}
+nav .links a{color:var(--muted);white-space:nowrap}
+nav .links a:hover{color:var(--gold);text-decoration:none}
+@media(max-width:640px){nav .links{gap:12px;font-size:13px}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:110px 0 90px;text-align:center;
+  background:radial-gradient(1100px 480px at 50% -120px,rgba(212,169,78,.16),transparent 65%)}
+.hero .kicker{color:var(--gold);letter-spacing:.5em;font-size:14px;margin-bottom:18px}
+.hero h1{font-size:clamp(52px,9vw,88px);font-weight:800;letter-spacing:.1em;line-height:1.2}
+.hero h1 .en{display:block;font-size:clamp(20px,3.4vw,30px);letter-spacing:.35em;color:var(--muted);
+  font-weight:400;margin-top:14px}
+.hero .tagline{margin:26px auto 0;max-width:640px;color:var(--muted);font-size:17px}
+.hero .meta{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:34px;font-size:14px;color:var(--muted)}
+.hero .meta b{color:var(--text);font-weight:600}
+.hero-cta{margin-top:38px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 30px;border-radius:999px;border:1px solid var(--gold);
+  color:var(--gold);font-size:15px;letter-spacing:.08em;transition:.25s}
+.btn:hover{background:var(--gold);color:#0d0f14;text-decoration:none}
+.btn.solid{background:var(--gold);color:#0d0f14}
+.btn.solid:hover{background:#e7bd63}
+/* sections */
+section{padding:74px 0;border-top:1px solid rgba(255,255,255,.06)}
+.sec-title{font-size:26px;letter-spacing:.3em;margin-bottom:8px;color:var(--text)}
+.sec-title .dot{color:var(--gold)}
+.sec-sub{color:var(--muted);font-size:14px;margin-bottom:36px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:28px 30px;margin-bottom:18px}
+/* timeline */
+.timeline{position:relative;padding-left:30px}
+.timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(var(--gold),transparent)}
+.tl-item{position:relative;margin-bottom:30px}
+.tl-item::before{content:"";position:absolute;left:-27px;top:8px;width:12px;height:12px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--gold)}
+.tl-year{color:var(--gold);font-weight:700;letter-spacing:.12em;font-size:15px}
+.tl-item h3{font-size:18px;margin:4px 0 6px}
+.tl-item p{color:var(--muted);font-size:15px;margin:0}
+/* companies */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+.biz h3{font-size:19px;margin-bottom:6px}
+.biz .en{color:var(--muted);font-size:13px;letter-spacing:.1em}
+.biz p{color:var(--muted);font-size:15px;margin:10px 0 14px}
+/* press */
+.press a{display:block;padding:18px 22px;border:1px solid var(--line);border-radius:12px;
+  margin-bottom:14px;background:var(--bg2);transition:.2s}
+.press a:hover{border-color:var(--gold);text-decoration:none;transform:translateY(-2px)}
+.press .src{font-size:12.5px;color:var(--gold);letter-spacing:.18em}
+.press .t{color:var(--text);font-size:16.5px;margin-top:4px}
+.press .d{color:var(--muted);font-size:13.5px;margin-top:2px}
+/* contact */
+.contact-list{list-style:none}
+.contact-list li{margin-bottom:14px;font-size:16px}
+.contact-list .lbl{display:inline-block;min-width:110px;color:var(--gold);letter-spacing:.2em;font-size:14px}
+footer{padding:44px 0 60px;text-align:center;color:var(--muted);font-size:13px}
+footer .note{max-width:640px;margin:0 auto 18px;font-size:12.5px;color:#6b7078}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">孔令江 <span>EDDIE HUNG</span></a>
+    <div class="links">
+      <a href="#about">關於</a>
+      <a href="#career">生涯</a>
+      <a href="#business">事業</a>
+      <a href="#press">報導</a>
+      <a href="#contact">聯絡</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker">全 媒 人</div>
+    <h1>孔令江<span class="en">EDDIE HUNG</span></h1>
+    <p class="tagline">「我係Eddie Hung，係一個全媒人，多多指教！」<br>縱橫報章、電視與新媒體逾三十年 — 從傳統媒體走到網絡時代的香港傳媒人。</p>
+    <div class="meta">
+      <div>出生 <b>1971年12月21日</b></div>
+      <div>出生地 <b>香港</b></div>
+      <div>學歷 <b>珠海學院新聞及傳播</b></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn solid" href="https://v1paper.com/" target="_blank" rel="noopener">瀏覽《V1周報》</a>
+      <a class="btn" href="#contact">聯絡我</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="sec-title">關於我 <span class="dot">·</span></h2>
+    <p class="sec-sub">ABOUT</p>
+    <div class="card reveal">
+      <p>孔令江（Eddie Hung），香港資深傳媒人，自稱「全媒人」。自小跟隨父親<strong>孔權開</strong>接觸電影電視 — 父親是出色的古裝電影服裝設計師，後轉任影視製作，曾任金超群、何家勁版《包青天》及劉兆銘首部電影《蝶變》的總負責人，並把香港藝人推介到台灣及內地市場。</p>
+      <p style="margin-top:14px">Eddie 早年投身傳媒，曾效力<strong>蘋果日報</strong>及<strong>壹傳媒互動</strong>，其團隊開發的網絡新聞平台深受歡迎；其後轉戰微電影、網絡電影，再於2016年及2021年兩度加入<strong>亞洲電視</strong>，出任製作總監，主力開拓數碼新媒體內容。2010年創立<strong>微訊媒體策略</strong>，2012年創辦《V1周報》及《V1視頻》，至今仍活躍於傳媒、影視及青年培育工作。</p>
+    </div>
+    <div class="card reveal">
+      <p style="color:var(--muted);font-size:15px">現任身份一覽：微訊媒體策略（Juicy Media Solution）執行監製／董事 · 《V1周報》v1paper.com 創辦人 · 香港電影美術學會顧問 · 香港微電影協會及香港流動媒體協會創會人</p>
+    </div>
+  </div>
+</section>
+
+<section id="career">
+  <div class="wrap">
+    <h2 class="sec-title">職業生涯 <span class="dot">·</span></h2>
+    <p class="sec-sub">CAREER TIMELINE</p>
+    <div class="timeline">
+      <div class="tl-item reveal"><div class="tl-year">1987 – 2001</div><h3>陳百祥經理人</h3><p>擔任藝人陳百祥的經理人，涉足演藝經理人工作。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2000 年代</div><h3>蘋果日報 · 壹傳媒互動</h3><p>投身新聞傳媒，先後任職蘋果日報及壹傳媒互動；其團隊開發的網絡新聞平台備受追捧。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2010</div><h3>創立微訊媒體策略</h3><p>創立微訊媒體策略有限公司（Juicy Media Solution Limited），出任董事／執行監製，業務涵蓋出版、營銷公關及資訊科技服務。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2012</div><h3>創辦《V1周報》·《V1視頻》</h3><p>創立香港多合一資訊平台《V1周報》（v1paper.com）及《V1視頻》，進軍新媒體。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2013</div><h3>創立兩個行業協會</h3><p>創立香港微電影協會有限公司及香港流動媒體協會，推動本地微電影及流動媒體發展。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2016</div><h3>亞洲電視網上節目製作總監</h3><p>出任亞洲電視網上節目製作總監，開拓網絡節目內容。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2021</div><h3>亞洲電視製作總監</h3><p>重返亞視出任製作總監，主理內容策劃，計劃推出十個新媒體節目，包括《KF1百萬拳王》《亞洲小姐競選》等；同年擔任亞洲小姐競選香港賽區面試評審。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2026</div><h3>CYBE 青少年籃球精英賽</h3><p>策劃「CYBE 青少年籃球精英賽」香港賽區賽事，推動青少年籃球及體育精神。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="business">
+  <div class="wrap">
+    <h2 class="sec-title">我的事業 <span class="dot">·</span></h2>
+    <p class="sec-sub">VENTURES</p>
+    <div class="grid">
+      <div class="card biz reveal">
+        <h3>微訊媒體策略</h3><div class="en">JUICY MEDIA SOLUTION LIMITED</div>
+        <p>2010年創立的香港媒體策略公司，業務包括印刷出版、專業服務、營銷公關及資訊科技服務。Eddie 擔任董事及執行監製。</p>
+        <a href="https://www.facebook.com/Juicy.tv" target="_blank" rel="noopener">Facebook 專頁 →</a>
+      </div>
+      <div class="card biz reveal">
+        <h3>《V1周報》</h3><div class="en">V1PAPER.COM</div>
+        <p>2012年創辦、屬於香港的多合一資訊平台，設紅館娛樂、親子、養生、為食男女、數碼潮物等版塊。</p>
+        <a href="https://v1paper.com/" target="_blank" rel="noopener">前往 v1paper.com →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="press">
+  <div class="wrap">
+    <h2 class="sec-title">媒體報導 <span class="dot">·</span></h2>
+    <p class="sec-sub">PRESS COVERAGE</p>
+    <div class="press">
+      <a class="reveal" href="https://www.tkww.hk/a/202104/07/AP606d1362e4b0661d5581b15a.html" target="_blank" rel="noopener">
+        <div class="src">大公文匯網 · 2021-04-07</div>
+        <div class="t">《亞視再現》— 專訪亞視製作總監孔令江</div>
+        <div class="d">「製作總監便是負責內容為主，他們將會有十個節目在數碼新媒體中播放……」</div>
+      </a>
+      <a class="reveal" href="https://www.facebook.com/jeffwongst/posts/1688814579498205/" target="_blank" rel="noopener">
+        <div class="src">FACEBOOK · 黃守東 · 2026-06-21</div>
+        <div class="t">以頒獎嘉賓身份出席好友孔令江策劃的 CYBE 青少年籃球精英賽香港賽區賽事</div>
+        <div class="d">「這場滿載熱血與朝氣的青少年籃球賽，使我內心滿是觸動與啟發。」</div>
+      </a>
+      <a class="reveal" href="https://www.stars-hk.com/2021/05/31/atv%E5%9C%98%E6%88%B0%E8%87%AA%E5%AA%92%E9%AB%93%E8%AA%B2%E7%A8%8B/" target="_blank" rel="noopener">
+        <div class="src">STARSHK · 2021-05-31</div>
+        <div class="t">ATV 團戰自媒體課程 — 亞視製作總監孔令江任嘉賓</div>
+      </a>
+      <a class="reveal" href="https://www.ksproductionhk.com/post/_0912" target="_blank" rel="noopener">
+        <div class="src">KS MEDIA · 2021-07-27</div>
+        <div class="t">亞洲小姐競選 2021 香港賽區面試 — 亞視顧問孔令江任評審</div>
+      </a>
+      <a class="reveal" href="https://baike.baidu.com/item/%E5%AD%94%E4%BB%A4%E6%B1%9F/4766344" target="_blank" rel="noopener">
+        <div class="src">百度百科</div>
+        <div class="t">孔令江（制片人）— 代表作《黃飛鴻與十三姨》</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 class="sec-title">聯絡 <span class="dot">·</span></h2>
+    <p class="sec-sub">CONTACT</p>
+    <div class="card reveal">
+      <ul class="contact-list">
+        <li><span class="lbl">電郵</span><a href="mailto:eddiehlk@hotmail.com">eddiehlk@hotmail.com</a></li>
+        <li><span class="lbl">Facebook</span><a href="https://www.facebook.com/eddiehlk" target="_blank" rel="noopener">facebook.com/eddiehlk</a></li>
+        <li><span class="lbl">V1周報</span><a href="https://v1paper.com/" target="_blank" rel="noopener">v1paper.com</a></li>
+        <li><span class="lbl">公司專頁</span><a href="https://www.facebook.com/Juicy.tv" target="_blank" rel="noopener">微訊媒體策略 Juicy Media Solution</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="note">本頁資料整理自公開網絡來源（新聞報導、公司名錄及本人 Facebook 公開資訊）。如有錯漏，歡迎指正。</p>
+    <p>© 2026 孔令江 Eddie Hung · 全媒人</p>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
