@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>孔令江 Eddie Hung — 全媒人</title>
-<meta name="description" content="孔令江 Eddie Hung — 香港資深傳媒人、影視監製、新媒體先驅。香港電台《港台體壇123》編審、TVB「東張+」內容顧問、微訊媒體策略執行監製。">
+<title>孔令江 Eddie Hung — 資深傳媒人 · 影視監製 · 新媒體先驅</title>
+<meta name="description" content="孔令江 Eddie Hung — 香港資深傳媒人、影視監製、新媒體先驅。超過三十年傳媒經驗，製作短片超過 2,500 條。">
 <style>
 :root{
-  --bg:#0d0f14; --bg2:#14171f; --gold:#d4a94e; --gold-dim:#9a7830;
+  --bg:#0d0f14; --bg2:#14171f; --gold:#d4a94e;
   --text:#eef0f4; --muted:#9aa0ae; --line:rgba(212,169,78,.22);
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -17,43 +17,53 @@ body{background:var(--bg);color:var(--text);
   line-height:1.85;letter-spacing:.03em}
 a{color:var(--gold);text-decoration:none}
 a:hover{text-decoration:underline}
+strong{color:var(--text)}
 .wrap{max-width:960px;margin:0 auto;padding:0 22px}
-nav{position:sticky;top:0;z-index:50;background:rgba(13,15,20,.92);backdrop-filter:blur(8px);
+nav{position:sticky;top:0;z-index:50;background:rgba(13,15,20,.94);backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;gap:26px;height:60px}
-nav .brand{font-weight:700;font-size:18px;color:var(--text);letter-spacing:.12em;white-space:nowrap}
+nav .wrap{display:flex;align-items:center;gap:20px;height:60px}
+nav .brand{font-weight:700;font-size:17px;color:var(--text);letter-spacing:.1em;white-space:nowrap}
 nav .brand span{color:var(--gold)}
-nav .links{margin-left:auto;display:flex;gap:16px;font-size:14px}
+nav .links{margin-left:auto;display:flex;gap:16px;font-size:13.5px}
 nav .links a{color:var(--muted);white-space:nowrap}
 nav .links a:hover{color:var(--gold);text-decoration:none}
-@media(max-width:720px){nav .links{gap:10px;font-size:12.5px}}
+@media(max-width:640px){nav .links{gap:10px;font-size:12.5px}}
 /* hero */
-.hero{position:relative;overflow:hidden;padding:110px 0 90px;text-align:center;
+.hero{position:relative;overflow:hidden;padding:100px 0 80px;text-align:center;
   background:radial-gradient(1100px 480px at 50% -120px,rgba(212,169,78,.16),transparent 65%)}
-.hero .kicker{color:var(--gold);letter-spacing:.5em;font-size:14px;margin-bottom:18px}
-.hero h1{font-size:clamp(52px,9vw,88px);font-weight:800;letter-spacing:.1em;line-height:1.2}
-.hero h1 .en{display:block;font-size:clamp(20px,3.4vw,30px);letter-spacing:.35em;color:var(--muted);
+.hero .kicker{color:var(--gold);letter-spacing:.42em;font-size:13px;margin-bottom:18px}
+.hero h1{font-size:clamp(48px,9vw,84px);font-weight:800;letter-spacing:.1em;line-height:1.2}
+.hero h1 .en{display:block;font-size:clamp(19px,3.2vw,28px);letter-spacing:.35em;color:var(--muted);
   font-weight:400;margin-top:14px}
-.hero .roles{margin:26px auto 0;max-width:680px;color:var(--gold);font-size:16px;letter-spacing:.15em}
-.hero .tagline{margin:14px auto 0;max-width:640px;color:var(--muted);font-size:16px}
-.stats{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin-top:44px}
-.stat{text-align:center}
-.stat b{display:block;font-size:30px;color:var(--gold);font-weight:800;letter-spacing:.05em}
-.stat span{font-size:13px;color:var(--muted);letter-spacing:.1em}
-.hero-cta{margin-top:38px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero .roles{margin-top:22px;color:var(--gold);letter-spacing:.14em;font-size:15px}
+.hero .tagline{margin:22px auto 0;max-width:660px;color:var(--muted);font-size:16px}
+.stats{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:36px}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 22px;min-width:130px}
+.stat .n{color:var(--gold);font-size:26px;font-weight:800;letter-spacing:.02em}
+.stat .l{color:var(--muted);font-size:12.5px;letter-spacing:.1em}
+.hero-cta{margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .btn{display:inline-block;padding:12px 30px;border-radius:999px;border:1px solid var(--gold);
   color:var(--gold);font-size:15px;letter-spacing:.08em;transition:.25s}
 .btn:hover{background:var(--gold);color:#0d0f14;text-decoration:none}
 .btn.solid{background:var(--gold);color:#0d0f14}
 .btn.solid:hover{background:#e7bd63}
 /* sections */
-section{padding:74px 0;border-top:1px solid rgba(255,255,255,.06)}
-.sec-title{font-size:26px;letter-spacing:.3em;margin-bottom:8px;color:var(--text)}
+section{padding:68px 0;border-top:1px solid rgba(255,255,255,.06)}
+.sec-title{font-size:25px;letter-spacing:.28em;margin-bottom:8px;color:var(--text)}
 .sec-title .dot{color:var(--gold)}
-.sec-sub{color:var(--muted);font-size:14px;margin-bottom:36px;letter-spacing:.2em}
-.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:28px 30px;margin-bottom:18px}
-.card h3{font-size:19px;margin-bottom:8px;color:var(--text)}
-.card p{color:var(--muted);font-size:15px}
+.sec-sub{color:var(--muted);font-size:13.5px;margin-bottom:34px;letter-spacing:.18em}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:26px 28px;margin-bottom:18px}
+.card p{color:var(--muted);font-size:15.5px}
+.card p+p{margin-top:12px}
+h3.block{font-size:19px;margin:34px 0 14px;color:var(--text)}
+h3.block:first-child{margin-top:0}
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:6px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.08);vertical-align:top}
+th{color:var(--gold);font-weight:600;letter-spacing:.08em;white-space:nowrap}
+td{color:var(--muted)}
+td:first-child{white-space:nowrap;color:var(--text)}
+@media(max-width:640px){table{font-size:13.5px}th,td{padding:8px 8px}}
 /* timeline */
 .timeline{position:relative;padding-left:30px}
 .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;
@@ -63,30 +73,18 @@ section{padding:74px 0;border-top:1px solid rgba(255,255,255,.06)}
   background:var(--bg);border:2px solid var(--gold)}
 .tl-year{color:var(--gold);font-weight:700;letter-spacing:.1em;font-size:15px}
 .tl-item h3{font-size:17.5px;margin:4px 0 6px}
-.tl-item p{color:var(--muted);font-size:14.5px;margin:0}
-/* grids */
+.tl-item p{color:var(--muted);font-size:15px;margin:0}
+.tl-item p b{color:var(--text)}
+/* grid */
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 @media(max-width:700px){.grid{grid-template-columns:1fr}}
-.biz h3{font-size:19px;margin-bottom:6px}
-.biz .en{color:var(--muted);font-size:13px;letter-spacing:.1em}
-.biz p{color:var(--muted);font-size:15px;margin:10px 0 14px}
-/* list rows */
-.rows .row{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:15px}
-.rows .row:last-child{border-bottom:none}
-.rows .k{color:var(--gold);min-width:170px;flex-shrink:0;letter-spacing:.06em}
-.rows .v{color:var(--muted)}
-.rows .v b{color:var(--text);font-weight:600}
-/* press */
-.press a{display:block;padding:18px 22px;border:1px solid var(--line);border-radius:12px;
-  margin-bottom:14px;background:var(--bg2);transition:.2s}
-.press a:hover{border-color:var(--gold);text-decoration:none;transform:translateY(-2px)}
-.press .src{font-size:12.5px;color:var(--gold);letter-spacing:.18em}
-.press .t{color:var(--text);font-size:16.5px;margin-top:4px}
-.press .d{color:var(--muted);font-size:13.5px;margin-top:2px}
-/* contact */
-.contact-list{list-style:none}
-.contact-list li{margin-bottom:14px;font-size:16px}
-.contact-list .lbl{display:inline-block;min-width:110px;color:var(--gold);letter-spacing:.2em;font-size:14px}
+.grid h3{font-size:18px;margin-bottom:6px}
+.grid p{color:var(--muted);font-size:14.5px;margin:10px 0 0}
+.grid .big{color:var(--gold);font-size:15px;font-weight:600;margin-bottom:6px}
+/* links */
+.links-list{list-style:none}
+.links-list li{margin-bottom:14px;font-size:16px}
+.links-list .lbl{display:inline-block;min-width:120px;color:var(--gold);letter-spacing:.18em;font-size:14px}
 footer{padding:44px 0 60px;text-align:center;color:var(--muted);font-size:13px}
 footer .note{max-width:640px;margin:0 auto 18px;font-size:12.5px;color:#6b7078}
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
@@ -99,13 +97,11 @@ footer .note{max-width:640px;margin:0 auto 18px;font-size:12.5px;color:#6b7078}
   <div class="wrap">
     <a class="brand" href="#top">孔令江 <span>EDDIE HUNG</span></a>
     <div class="links">
-      <a href="#about">關於</a>
+      <a href="#about">概述</a>
       <a href="#career">生涯</a>
       <a href="#tv">電視</a>
-      <a href="#media">新媒體</a>
+      <a href="#newmedia">新媒體</a>
       <a href="#film">影視</a>
-      <a href="#press">報導</a>
-      <a href="#contact">聯絡</a>
     </div>
   </div>
 </nav>
@@ -115,170 +111,172 @@ footer .note{max-width:640px;margin:0 auto 18px;font-size:12.5px;color:#6b7078}
     <div class="kicker">全 媒 人</div>
     <h1>孔令江<span class="en">EDDIE HUNG</span></h1>
     <p class="roles">資深傳媒人 · 影視監製 · 新媒體先驅 · 電視節目改革推手</p>
-    <p class="tagline">超過三十年傳媒經驗，製作短片超過 2,500 條，總點擊量超過 3 億。<br>從鏡頭前的新聞攝影記者，到幕後的監製與新媒體開拓者。</p>
+    <p class="tagline">從 1991 年拿起相機的那一刻起，到今天仍然活躍在傳媒第一線 — 見證並推動了華語影視與新媒體的每一次變革。</p>
     <div class="stats">
-      <div class="stat"><b>35年</b><span>前線傳媒及影視工作</span></div>
-      <div class="stat"><b>2,500+</b><span>製作短片</span></div>
-      <div class="stat"><b>3億+</b><span>總點擊量</span></div>
-      <div class="stat"><b>1,170集</b><span>港台體壇123直播</span></div>
-      <div class="stat"><b>117集</b><span>電視劇製作</span></div>
+      <div class="stat"><div class="n">30+</div><div class="l">年傳媒經驗</div></div>
+      <div class="stat"><div class="n">2,500+</div><div class="l">製作短片</div></div>
+      <div class="stat"><div class="n">3億+</div><div class="l">總點擊量</div></div>
+      <div class="stat"><div class="n">1,170</div><div class="l">《港台體壇123》集數</div></div>
     </div>
     <div class="hero-cta">
       <a class="btn solid" href="https://v1paper.com/" target="_blank" rel="noopener">瀏覽《V1周報》</a>
-      <a class="btn" href="#contact">聯絡我</a>
+      <a class="btn" href="#links">相關連結</a>
     </div>
   </div>
 </header>
 
 <section id="about">
   <div class="wrap">
-    <h2 class="sec-title">關於我 <span class="dot">·</span></h2>
-    <p class="sec-sub">ABOUT</p>
+    <h2 class="sec-title">個人概述 <span class="dot">·</span></h2>
+    <p class="sec-sub">PROFILE</p>
     <div class="card reveal">
-      <p>孔令江（Eddie Hung），資深傳媒人、影視監製及新媒體策略家。1991 年入行，先後服務於《星島日報》海外版、《現代日報》、台灣《大成報》、《蘋果日報》、《成報》等多家知名媒體機構，以鏡頭和筆桿記錄了香港回歸、三峽工程、台灣 921 大地震等華人世界多個重大歷史時刻。</p>
-      <p style="margin-top:14px">2007 年加入壹傳媒，開發香港首個直播互動網站《壹蘋果直播》；2012 年創立微訊媒體策略（Juicy Media Solution），創辦《V1周報》及《V1視頻》，並成立香港微電影協會及香港流動媒體協會。近年擔任香港電台《港台體壇123》編審（開創 1,170 集直播紀錄）及 TVB「東張+」內容顧問，推動傳統電視的數碼轉型。</p>
+      <p>孔令江（Eddie Hung），資深傳媒人、影視監製及新媒體策略家。1991 年投身傳媒工作，先後服務於《星島日報》海外版、《現代日報》、《大成報》、《蘋果日報》、《成報》及《壹傳媒》等多家知名媒體機構，累積超過三十年的傳媒實戰經驗。</p>
+      <p>從鏡頭前的攝影記者到幕後的製作人與監製，Eddie 的職業生涯橫跨<strong>新聞攝影、電視劇製作、網絡電影、新媒體平台營運及教育領域</strong>。他見證並推動了華語影視與新媒體的變革浪潮，經手參與製作的短片超過 2,500 條，總點擊量超過 3 億。</p>
+      <p>近年更活躍於香港兩大公共及商業電視台 — 香港電台（RTHK）及無綫電視（TVB），分別擔任《港台體壇123》編審及《東張西望》網絡版「東張+」(Scoop+) 內容顧問，推動傳統電視的數碼轉型與改革。</p>
     </div>
     <div class="card reveal">
-      <h3>學歷</h3>
-      <p>1992 – 1996　香港珠海書院　新聞及傳播學系學位<br>1991 – 1992　香港珠海書院　廣播電視製作文憑</p>
-    </div>
-    <div class="card reveal">
-      <h3>專業榮譽</h3>
-      <p>第四屆香港報業公會攝影比賽本地新聞組季軍 · 香港攝影記者協會執行委員 · 香港電影美術學會顧問 · 香港微電影協會創會會長 · 香港流動媒體協會創會會長</p>
+      <h3 class="block">學歷背景</h3>
+      <table>
+        <tr><th>年份</th><th>院校</th><th>學歷</th></tr>
+        <tr><td>1992 – 1996</td><td>香港珠海書院</td><td>新聞及傳播學系學位</td></tr>
+        <tr><td>1991 – 1992</td><td>香港珠海書院</td><td>廣播電視製作文憑</td></tr>
+      </table>
     </div>
   </div>
 </section>
 
 <section id="career">
   <div class="wrap">
-    <h2 class="sec-title">職業生涯 <span class="dot">·</span></h2>
-    <p class="sec-sub">CAREER TIMELINE</p>
+    <h2 class="sec-title">完整職業生涯 <span class="dot">·</span></h2>
+    <p class="sec-sub">CAREER TIMELINE · 1991 – 至今</p>
     <div class="timeline">
-      <div class="tl-item reveal"><div class="tl-year">1991 – 1993</div><h3>《星島日報》海外版 · 助理編輯</h3><p>入行起點，從最基礎的新聞編輯工作做起，學習新聞判斷與文字功底。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">1993 – 1994</div><h3>《現代日報》（明報集團）· 攝影師</h3><p>正式拿起相機，開始以鏡頭記錄新聞的職業生涯。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">1995 – 1996</div><h3>台灣《大成報》· 攝影記者及記者</h3><p>負責娛樂新聞採訪與攝影，接觸不同的媒體文化與運作模式。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">1996</div><h3>《蘋果日報》· 本地新聞攝影記者</h3><p>進入香港主流報業核心圈子。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">1996 – 2001</div><h3>《成報》· 本地及中國新聞攝影記者及記者</h3><p>全方位參與各版面採訪；親歷香港回歸、三峽工程專題、台灣 921 大地震等重大事件；奪得第四屆香港報業公會攝影比賽本地新聞組季軍。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2001 – 2003</div><h3>多維意像 · 創意總監 / 新超科技 · 互聯網發展總監 / 多維創意出版社 · 攝影師及編輯</h3><p>由前線新聞轉向創意及互聯網領域。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2003 – 2007</div><h3>中國內地影視製作 · 製作人 / 監製</h3><p>參與多部電視劇製作及發行，作品遍及國內及東南亞市場，包括央視熱播的《名揚花鼓》。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2007 – 2012</div><h3>壹傳媒網絡播放有限公司 · 視頻製作主管</h3><p>開發香港首個直播互動網站《壹蘋果直播》（後改名 VDONext），開創香港網絡媒體新紀元。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2012 – 2016</div><h3>微訊媒體策略（Juicy Media Solution）· 執行監製</h3><p>創立全媒體內容平台，旗下 V1HK、V1周報（四合一新媒體平台）、V1Play、V1Music；創立香港微電影協會及香港流動媒體協會。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2016 – 2017</div><h3>VBA 大灣區全媒體平台 · 總務長</h3><p>率先佈局大灣區短視頻市場，覆蓋 20+ 國內外視頻渠道；監製多部網絡電影。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2018 – 2021</div><h3>香港珠海學院 · 專業應用講師 / 香港公開大學 · 兼任導師</h3><p>教授新媒體製作及視頻數碼媒體製作，培育新一代傳媒人才。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2021</div><h3>亞洲電視數碼媒體 · 製作部總監</h3><p>重塑品牌形象：舉辦近年最具話題性的亞洲小姐競選；吳孟達離世報導全港最快，影響力遍及全亞洲。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2021 – 至今</div><h3>香港電台 RTHK · 《港台體壇123》編審</h3><p>開創 1,170 集直播體育節目前無古人的紀錄；曾任《議事論事》研究員。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2022 – 至今</div><h3>TVB MyTV Super · 「東張+」內容顧問</h3><p>協助《東張西望》網絡版「東張+」的內容策略，推動傳統電視數碼轉型。</p></div>
-      <div class="tl-item reveal"><div class="tl-year">2026</div><h3>CYBE 青少年籃球精英賽 · 香港賽區策劃</h3><p>策劃「CYBE 青少年籃球精英賽」香港賽區賽事，推動青少年籃球及體育精神。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2022 – 至今</div><h3>TVB MyTV Super — 「東張+」(Scoop+) 內容顧問</h3><p>協助傳統電視節目成功轉型新媒體平台。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2021 – 至今</div><h3>香港電台 RTHK — 《港台體壇123》編審</h3><p>開創 <b>1,170 集</b>直播體育紀錄，推動「體育無類」理念；兼任《議事論事》研究員。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2021</div><h3>亞洲電視數碼媒體 — 製作部總監</h3><p>負責新聞、公共事務及節目製作部門整體管理，推動品牌重塑與數碼媒體策略。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2018 – 2021</div><h3>香港珠海學院 / 香港公開大學 — 講師</h3><p>分別擔任專業應用講師及兼任導師，教授新媒體製作與視頻及數碼媒體製作技巧。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2016 – 2017</div><h3>VBA Media Planning Limited — 總務長</h3><p>成立大灣區一站式短視頻資訊平台，覆蓋 20+ 國內外視頻渠道，製作短片超過 1,000 條。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2012 – 2016</div><h3>微訊媒體策略 Juicy Media — 執行監製</h3><p>創立全媒體內容平台：V1HK、V1周報、V1Play、V1Music；創立香港微電影協會及香港流動媒體協會。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2007 – 2012</div><h3>壹傳媒網絡播放 — 視頻製作主管</h3><p>主導開發香港首個直播互動網站《壹蘋果直播》（後改名 VDONext）。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2003 – 2007</div><h3>中國內地影視製作 — 製作人 / 監製</h3><p>參與多部電視劇製作，作品發行遍及國內及東南亞，包括央視熱播劇《名揚花鼓》。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">2002 – 2003</div><h3>新超科技 / 多維創意出版社</h3><p>互聯網發展總監、攝影師及編輯。</p></div>
+      <div class="tl-item reveal"><div class="tl-year">1991 – 2001</div><h3>前線新聞工作 — 攝影記者 / 記者</h3><p>先後任職《星島日報》海外版（助理編輯）、《現代日報》（攝影師）、台灣《大成報》（攝影記者）、《蘋果日報》及《成報》（本地及中國新聞攝影記者）。親歷 1997 香港回歸、澳門回歸、國慶大典、三峽工程、張家口地震、台灣 921 大地震、釣魚台事件等重大採訪。</p></div>
+    </div>
+    <div class="card reveal">
+      <h3 class="block">專業榮譽</h3>
+      <p>第四屆香港報業公會攝影比賽本地新聞組季軍 · 香港攝影記者協會執行委員 · 珠海書院新聞及傳播學系系會副主席 · 曾代表香港參加英國世界大學生運動會</p>
     </div>
   </div>
 </section>
 
 <section id="tv">
   <div class="wrap">
-    <h2 class="sec-title">電視台工作 <span class="dot">·</span></h2>
+    <h2 class="sec-title">電視台節目推動 <span class="dot">·</span></h2>
     <p class="sec-sub">TELEVISION</p>
     <div class="grid">
-      <div class="card biz reveal">
-        <h3>《港台體壇123》編審</h3><div class="en">RTHK · 2021 – 至今</div>
-        <p>香港電台日播體育直播節目，逢星期一至五下午於港台電視31播出。截至 2026 年 2 月播出 1,170 集，前無古人，秉持「體育無類」理念。</p>
+      <div class="card reveal">
+        <div class="big">香港電台 RTHK</div>
+        <h3>《港台體壇123》編審</h3>
+        <p>自 2021 年起擔任編審，負責節目整體內容方向、選題策劃及製作質量。截至 2026 年 2 月共播出 1,170 集，創下香港體育直播節目前無古人的紀錄。節目秉持「體育無類」理念，連繫城市對運動的熱情。</p>
       </div>
-      <div class="card biz reveal">
-        <h3>「東張+」內容顧問</h3><div class="en">TVB MYTV SUPER · 2022 – 至今</div>
-        <p>《東張西望》網絡版「東張+」(Scoop+) 的內容顧問，將新媒體經驗注入平台運營，推動「報東張」效應延伸至網絡。</p>
+      <div class="card reveal">
+        <div class="big">香港電台 RTHK</div>
+        <h3>《議事論事》研究員</h3>
+        <p>2021 年擔任研究員，負責議題研究、資料蒐集及內容分析，參與這個近四十年歷史的時事節目的最後階段。</p>
       </div>
-      <div class="card biz reveal">
-        <h3>亞洲電視 · 製作部總監</h3><div class="en">ATV · 2021</div>
-        <p>主導品牌重塑：亞洲小姐競選引發全城熱議；搶先全港報導吳孟達離世消息，令多間傳媒引用亞視報導。</p>
+      <div class="card reveal">
+        <div class="big">TVB MyTV Super</div>
+        <h3>「東張+」(Scoop+) 內容顧問</h3>
+        <p>自 2022 年起擔任內容顧問，將新媒體運營經驗注入《東張西望》的網絡升級版，協助「報東張」效應延伸至全媒體平台。</p>
       </div>
-      <div class="card biz reveal">
-        <h3>《議事論事》研究員</h3><div class="en">RTHK · 2021</div>
-        <p>為近四十年歷史的立法會議事節目提供議題研究支持，參與這個傳奇節目的最後階段。</p>
+      <div class="card reveal">
+        <div class="big">亞洲電視 ATV</div>
+        <h3>製作部總監</h3>
+        <p>2021 年出任製作部總監，負責新聞、公共事務及節目製作，主導品牌重塑策略 — 包括近年最具話題性的亞洲小姐競選，以及搶先全港報導吳孟達離世消息，影響力遍及全亞洲。</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="media">
+<section id="newmedia">
   <div class="wrap">
     <h2 class="sec-title">新媒體開拓 <span class="dot">·</span></h2>
     <p class="sec-sub">NEW MEDIA</p>
     <div class="card reveal">
-      <div class="rows">
-        <div class="row"><div class="k">2007 – 2012 · 壹傳媒</div><div class="v"><b>《壹蘋果直播》/ VDONext</b> — 開發香港首個直播互動網站，迅速成為當時香港最高點擊的視頻網站之一。</div></div>
-        <div class="row"><div class="k">2012 – 2016 · Juicy Media</div><div class="v"><b>V1HK / V1周報 / V1Play / V1Music</b> — 全媒體內容平台；V1周報為香港首份「報紙＋手機＋電腦＋平板」四合一新媒體報紙。</div></div>
-        <div class="row"><div class="k">2016 – 2017 · VBA</div><div class="v"><b>大灣區全媒體平台</b> — 率先佈局短視頻市場，覆蓋 20+ 國內外視頻及社交媒體渠道，製作短片超過 1,000 條。</div></div>
-        <div class="row"><div class="k">2022 – 至今 · TVB</div><div class="v"><b>「東張+」(Scoop+)</b> — 協助傳統電視節目成功轉型新媒體平台。</div></div>
-      </div>
+      <h3 class="block">壹蘋果直播 / VDONext（2007 – 2012）</h3>
+      <p>加入壹傳媒集團新媒體部門擔任視頻製作主管，主導開發《壹蘋果直播》— 香港首個直播互動網站，後改名 VDONext，成為當時香港最高點擊的視頻網站之一。</p>
+    </div>
+    <div class="card reveal">
+      <h3 class="block">微訊媒體 Juicy Media（2012 – 2016）</h3>
+      <p>創立微訊媒體策略有限公司（Juicy Media Solution Ltd.），打造集品牌傳播、商業顧問、營銷策劃及影視傳播於一體的全媒體解決方案：</p>
+      <table>
+        <tr><th>平台</th><th>定位</th><th>成就</th></tr>
+        <tr><td>V1HK</td><td>短片推廣及製作平台</td><td>超過 80 萬人次瀏覽</td></tr>
+        <tr><td>V1周報</td><td>免費雙周報，報紙、手機、電腦、平板四合一</td><td>於 100 間 759 阿信屋及 80 間 VanGo 便利店派發</td></tr>
+        <tr><td>V1Play</td><td>電競及遊戲綜合應用平台</td><td>開拓電競與遊戲的媒體融合</td></tr>
+        <tr><td>V1Music</td><td>音樂平台</td><td>為香港獨立音樂人提供發聲渠道</td></tr>
+      </table>
+      <p style="margin-top:12px">同期創立香港微電影協會及香港流動媒體協會，推動本地新媒體產業發展。</p>
+    </div>
+    <div class="card reveal">
+      <h3 class="block">VBA 大灣區全媒體平台（2016 – 2017）</h3>
+      <p>成立 VBA，率先佈局大灣區短視頻市場，覆蓋 20+ 國內外視頻及社交媒體渠道，製作短片超過 1,000 條。監製網絡電影《將神》《守宮剎》《香港大師》— 其中《香港大師》是 2017 年中國超過 5,000 部網絡大電影中，唯一入選香港電影金像獎候選的網絡電影。</p>
     </div>
   </div>
 </section>
 
 <section id="film">
   <div class="wrap">
-    <h2 class="sec-title">影視製作 <span class="dot">·</span></h2>
-    <p class="sec-sub">FILM &amp; TV PRODUCTION</p>
+    <h2 class="sec-title">影視製作成就 <span class="dot">·</span></h2>
+    <p class="sec-sub">FILM & DRAMA</p>
     <div class="card reveal">
-      <h3>電視劇</h3>
-      <div class="rows">
-        <div class="row"><div class="k">《名揚花鼓》· 34集</div><div class="v">中央電視台熱播 — <b>製作人</b></div></div>
-        <div class="row"><div class="k">《黃飛鴻與十三姨》· 33集</div><div class="v">中國電影集團公司 — <b>監製</b></div></div>
-        <div class="row"><div class="k">《非常女生》· 30集</div><div class="v">北京方舟利華 — <b>監製</b></div></div>
-        <div class="row"><div class="k">《真的好想你》· 20集</div><div class="v">廣東電視台 / 馬來西亞家娛 — <b>製作人</b></div></div>
-      </div>
+      <h3 class="block">電視劇製作（2003 – 2007）</h3>
+      <table>
+        <tr><th>作品</th><th>集數</th><th>角色</th></tr>
+        <tr><td>《名揚花鼓》（陳坤、曾寶儀主演）</td><td>34 集 · 中央電視台熱播</td><td>製作人</td></tr>
+        <tr><td>《黃飛鴻與十三姨》</td><td>33 集 · 中國電影集團</td><td>監製</td></tr>
+        <tr><td>《非常女生》</td><td>30 集 · 北京方舟利華</td><td>監製</td></tr>
+        <tr><td>《真的好想你》</td><td>20 集 · 廣東電視台 / 馬來西亞家娛</td><td>製作人</td></tr>
+      </table>
     </div>
     <div class="card reveal">
-      <h3>網絡電影 / 微電影</h3>
-      <div class="rows">
-        <div class="row"><div class="k">《澳囧》</div><div class="v">全網 8,000 萬+ 點擊 — <b>監製</b></div></div>
-        <div class="row"><div class="k">《我愛草食男》</div><div class="v">全網 1,500 萬+ 點擊 — <b>監製</b></div></div>
-        <div class="row"><div class="k">《捕快·血之刃》</div><div class="v">騰訊獨播，16 天 748 萬人次收看 — <b>監製</b></div></div>
-        <div class="row"><div class="k">《香港大師》</div><div class="v">2017 年唯一入選香港電影金像獎候選的網絡電影 — <b>監製</b></div></div>
-        <div class="row"><div class="k">《目擊》</div><div class="v">入圍康城影展等多個國際影展 — <b>製作人</b></div></div>
-      </div>
+      <h3 class="block">網絡電影與微電影</h3>
+      <table>
+        <tr><th>作品</th><th>成績</th><th>角色</th></tr>
+        <tr><td>《澳囧》Lost in Macao</td><td>全網 8,000 萬+ 點擊 · 收益率 187%</td><td>監製</td></tr>
+        <tr><td>《我愛草食男》</td><td>全網 1,500 萬+ 點擊</td><td>監製</td></tr>
+        <tr><td>《捕快·血之刃》</td><td>上線 16 天 748 萬點擊</td><td>監製</td></tr>
+        <tr><td>《目擊》The Witness</td><td>入圍康城影展等多個國際影展</td><td>製作人</td></tr>
+        <tr><td>《滅火雙雄》</td><td>北京國際微電影節光年獎</td><td>監製</td></tr>
+      </table>
     </div>
-  </div>
-</section>
-
-<section id="press">
-  <div class="wrap">
-    <h2 class="sec-title">媒體報導 <span class="dot">·</span></h2>
-    <p class="sec-sub">PRESS COVERAGE</p>
-    <div class="press">
-      <a class="reveal" href="https://www.tkww.hk/a/202104/07/AP606d1362e4b0661d5581b15a.html" target="_blank" rel="noopener">
-        <div class="src">大公文匯網 · 2021-04-07</div>
-        <div class="t">《亞視再現》— 專訪亞視製作總監孔令江</div>
-        <div class="d">「製作總監便是負責內容為主，他們將會有十個節目在數碼新媒體中播放……」</div>
-      </a>
-      <a class="reveal" href="https://www.facebook.com/jeffwongst/posts/1688814579498205/" target="_blank" rel="noopener">
-        <div class="src">FACEBOOK · 黃守東 · 2026-06-21</div>
-        <div class="t">以頒獎嘉賓身份出席好友孔令江策劃的 CYBE 青少年籃球精英賽香港賽區賽事</div>
-        <div class="d">「這場滿載熱血與朝氣的青少年籃球賽，使我內心滿是觸動與啟發。」</div>
-      </a>
-      <a class="reveal" href="https://www.stars-hk.com/2021/05/31/atv%E5%9C%98%E6%88%B0%E8%87%AA%E5%AA%92%E9%AB%93%E8%AA%B2%E7%A8%8B/" target="_blank" rel="noopener">
-        <div class="src">STARSHK · 2021-05-31</div>
-        <div class="t">ATV 團戰自媒體課程 — 亞視製作總監孔令江任嘉賓</div>
-      </a>
-      <a class="reveal" href="https://www.ksproductionhk.com/post/_0912" target="_blank" rel="noopener">
-        <div class="src">KS MEDIA · 2021-07-27</div>
-        <div class="t">亞洲小姐競選 2021 香港賽區面試 — 亞視顧問孔令江任評審</div>
-      </a>
-      <a class="reveal" href="https://baike.baidu.com/item/%E5%AD%94%E4%BB%A4%E6%B1%9F/4766344" target="_blank" rel="noopener">
-        <div class="src">百度百科</div>
-        <div class="t">孔令江（制片人）— 代表作《黃飛鴻與十三姨》</div>
-      </a>
+    <div class="card reveal">
+      <h3 class="block">教育傳承</h3>
+      <table>
+        <tr><th>院校</th><th>職位</th><th>科目</th></tr>
+        <tr><td>香港珠海學院</td><td>專業應用講師（2018 – 2021）</td><td>新媒體製作</td></tr>
+        <tr><td>香港公開大學李嘉誠專業進修學院</td><td>兼任導師（2018 – 2021）</td><td>視頻及數碼媒體製作技巧</td></tr>
+      </table>
+    </div>
+    <div class="card reveal">
+      <h3 class="block">專業技能</h3>
+      <p><strong>影視製作</strong>：電視劇製作、網絡電影監製、微電影製作、節目策劃、直播串流<br>
+      <strong>新聞攝影</strong>：新聞攝影、圖片編輯、實地採訪報導、新聞判斷<br>
+      <strong>新媒體營銷</strong>：全媒體平台營運、短視頻製作、社交媒體策略、品牌傳播、跨平台內容策略<br>
+      <strong>語言</strong>：精通粵語、普通話及英語</p>
     </div>
   </div>
 </section>
 
-<section id="contact">
+<section id="links">
   <div class="wrap">
-    <h2 class="sec-title">聯絡 <span class="dot">·</span></h2>
-    <p class="sec-sub">CONTACT</p>
+    <h2 class="sec-title">相關連結 <span class="dot">·</span></h2>
+    <p class="sec-sub">LINKS</p>
     <div class="card reveal">
-      <ul class="contact-list">
-        <li><span class="lbl">Facebook</span><a href="https://www.facebook.com/eddiehlk" target="_blank" rel="noopener">facebook.com/eddiehlk</a></li>
+      <ul class="links-list">
         <li><span class="lbl">V1周報</span><a href="https://v1paper.com/" target="_blank" rel="noopener">v1paper.com</a></li>
+        <li><span class="lbl">Facebook</span><a href="https://www.facebook.com/eddiehlk" target="_blank" rel="noopener">facebook.com/eddiehlk</a></li>
         <li><span class="lbl">公司專頁</span><a href="https://www.facebook.com/Juicy.tv" target="_blank" rel="noopener">微訊媒體策略 Juicy Media Solution</a></li>
+        <li><span class="lbl">V1周報專頁</span><a href="https://www.facebook.com/V1Paper" target="_blank" rel="noopener">facebook.com/V1Paper</a></li>
       </ul>
     </div>
   </div>
@@ -286,7 +284,7 @@ footer .note{max-width:640px;margin:0 auto 18px;font-size:12.5px;color:#6b7078}
 
 <footer>
   <div class="wrap">
-    <p class="note">本頁資料由本人提供。</p>
+    <p class="note">本頁內容由孔令江本人提供。</p>
     <p>© 2026 孔令江 Eddie Hung · 全媒人</p>
   </div>
 </footer>
