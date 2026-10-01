@@ -63,7 +63,21 @@ th,td{text-align:left;padding:10px 12px;border-bottom:1px solid rgba(255,255,255
 th{color:var(--gold);font-weight:600;letter-spacing:.08em;white-space:nowrap}
 td{color:var(--muted)}
 td:first-child{white-space:nowrap;color:var(--text)}
-@media(max-width:640px){table{font-size:13.5px}th,td{padding:8px 8px}}
+@media(max-width:640px){
+  table{font-size:13.5px}
+  th,td{padding:8px 8px}
+  /* 手機版表格轉卡片式，唔再被切 */
+  table thead{display:none}
+  table,table tbody,table tr,table td{display:block;width:100%}
+  table tr:first-child{display:none}
+  table tr{border:1px solid rgba(255,255,255,.1);border-radius:12px;margin-bottom:12px;
+    padding:6px 0;background:rgba(255,255,255,.02)}
+  table td{border-bottom:none;padding:7px 14px;display:flex;justify-content:space-between;
+    gap:12px;white-space:normal!important;text-align:right}
+  table td::before{content:attr(data-label);color:var(--gold);font-weight:600;
+    flex-shrink:0;text-align:left}
+  table td:first-child{white-space:normal;color:var(--text)}
+}
 /* timeline */
 .timeline{position:relative;padding-left:30px}
 .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;
@@ -295,6 +309,18 @@ footer .note{max-width:640px;margin:0 auto 18px;font-size:12.5px;color:#6b7078}
 <script>
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+/* 手機版表格卡片化：自動幫每格加上欄名 */
+document.querySelectorAll('table').forEach(function(t){
+  var rows=t.querySelectorAll('tr');
+  if(!rows.length)return;
+  var labels=[];
+  rows[0].querySelectorAll('th').forEach(function(th){labels.push(th.textContent.trim());});
+  for(var i=1;i<rows.length;i++){
+    rows[i].querySelectorAll('td').forEach(function(td,j){
+      if(labels[j])td.setAttribute('data-label',labels[j]);
+    });
+  }
+});
 </script>
 </body>
 </html>
